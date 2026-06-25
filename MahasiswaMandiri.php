@@ -39,7 +39,16 @@ class MahasiswaMandiri extends Mahasiswa
         return mysqli_query($conn, $query);
     }
 
-    public function hitungTagihanSemester() {}
+    public function hitungTagihanSemester()
+    {
+        return $this->tarif_ukt_nominal + 100000;
+    }
 
-    public function tampilkanSpesifikasiAkademik() {}
+    public function tampilkanSpesifikasiAkademik()
+    {
+        return "
+            Golongan UKT : {$this->golonganUkt}<br>
+            Nama Wali : {$this->namaWali}
+        ";
+    }
 }

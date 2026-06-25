@@ -39,7 +39,15 @@ class MahasiswaBidikmisi extends Mahasiswa
         return mysqli_query($conn, $query);
     }
 
-    public function hitungTagihanSemester() {}
+    public function hitungTagihanSemester()
+    {
+        return 0;
+    }
 
-    public function tampilkanSpesifikasiAkademik() {}
+    public function tampilkanSpesifikasiAkademik()
+    {
+        return "
+            Nomor KIP Kuliah : {$this->nomorKipKuliah}<br>
+            Dana Saku Subsidi : Rp " . number_format($this->danaSakuSubsidi, 0, ',', '.');
+    }
 }

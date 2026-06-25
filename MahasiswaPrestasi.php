@@ -39,7 +39,16 @@ class MahasiswaPrestasi extends Mahasiswa
         return mysqli_query($conn, $query);
     }
 
-    public function hitungTagihanSemester() {}
+    public function hitungTagihanSemester()
+    {
+        return $this->tarif_ukt_nominal * 0.25;
+    }
 
-    public function tampilkanSpesifikasiAkademik() {}
+    public function tampilkanSpesifikasiAkademik()
+    {
+        return "
+            Instansi Beasiswa : {$this->namaInstansiBeasiswa}<br>
+            Minimal IPK : {$this->minimalIpkSyarat}
+        ";
+    }
 }
