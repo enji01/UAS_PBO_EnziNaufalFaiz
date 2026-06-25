@@ -12,7 +12,7 @@ class MahasiswaBidikmisi extends Mahasiswa
         $nama_mahasiswa,
         $nim,
         $semester,
-        $tarif_ukt_nominal,
+        $tarifUktNominal,
         $nomorKipKuliah,
         $danaSakuSubsidi
     ) {
@@ -21,7 +21,7 @@ class MahasiswaBidikmisi extends Mahasiswa
             $nama_mahasiswa,
             $nim,
             $semester,
-            $tarif_ukt_nominal
+            $tarifUktNominal
         );
 
         $this->nomorKipKuliah = $nomorKipKuliah;

@@ -12,7 +12,7 @@ class MahasiswaPrestasi extends Mahasiswa
         $nama_mahasiswa,
         $nim,
         $semester,
-        $tarif_ukt_nominal,
+        $tarifUktNominal,
         $namaInstansiBeasiswa,
         $minimalIpkSyarat
     ) {
@@ -21,7 +21,7 @@ class MahasiswaPrestasi extends Mahasiswa
             $nama_mahasiswa,
             $nim,
             $semester,
-            $tarif_ukt_nominal
+            $tarifUktNominal
         );
 
         $this->namaInstansiBeasiswa = $namaInstansiBeasiswa;
@@ -41,7 +41,7 @@ class MahasiswaPrestasi extends Mahasiswa
 
     public function hitungTagihanSemester()
     {
-        return $this->tarif_ukt_nominal * 0.25;
+        return $this->tarifUktNominal * 0.25;
     }
 
     public function tampilkanSpesifikasiAkademik()

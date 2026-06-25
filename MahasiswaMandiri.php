@@ -12,7 +12,7 @@ class MahasiswaMandiri extends Mahasiswa
         $nama_mahasiswa,
         $nim,
         $semester,
-        $tarif_ukt_nominal,
+        $tarifUktNominal,
         $golonganUkt,
         $namaWali
     ) {
@@ -21,7 +21,7 @@ class MahasiswaMandiri extends Mahasiswa
             $nama_mahasiswa,
             $nim,
             $semester,
-            $tarif_ukt_nominal
+            $tarifUktNominal
         );
 
         $this->golonganUkt = $golonganUkt;
@@ -41,7 +41,7 @@ class MahasiswaMandiri extends Mahasiswa
 
     public function hitungTagihanSemester()
     {
-        return $this->tarif_ukt_nominal + 100000;
+        return $this->tarifUktNominal + 100000;
     }
 
     public function tampilkanSpesifikasiAkademik()
